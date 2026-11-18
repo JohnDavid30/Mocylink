@@ -1,0 +1,69 @@
+{
+  "name": "mocylink",
+  "version": "2.0.0",
+  "description": "Easy, flexible, and feature-rich Lavalink v4 client for Node.js & TypeScript (inspired by lavalink-client)",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mocylink",
+    "lavalink",
+    "lavalink-v4",
+    "lavalink-client",
+    "discord",
+    "discord.js",
+    "music",
+    "audio",
+    "sponsorblock",
+    "lavalyrics",
+    "lavasearch",
+    "lavasrc",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrrVit665/Mocylink.git"
+  },
+  "author": "JOHNDAVID",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrrVit665/Mocylink/issues"
+  },
+  "homepage": "https://github.com/MrrVit665/Mocylink#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
